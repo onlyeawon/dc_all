@@ -1,0 +1,18 @@
+.grandchlid{
+    padding: 4px;
+    background-color:rgb(255, 163, 163) ;
+}
+.chlid{
+    padding: 16px;
+    background-color:rgb(255, 193, 193) ;
+}
+.parent{
+    padding: 32px;
+    background-color:rgb(255, 222, 222) ;
+    margin: 16px auto ;
+    max-width: 960px;
+}
+.friend{
+    padding: 32px;
+    background-color:rgb(59, 255, 177) ;
+}
