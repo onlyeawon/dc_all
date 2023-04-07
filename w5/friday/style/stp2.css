@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navBar{
+    font-family: 'Tillana', cursive;
+    padding: 20px 50px ;
+    min-height: 10px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-color: rgb(0, 0, 0);}
+
+.navBar__buttons{
+    display: flex;
+    gap: 60px;
+}
+
+.navBar__button>a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.navBar__logo{
+    color: lime;
+    font-size: 80px;
+    font-weight: 700;
+}
