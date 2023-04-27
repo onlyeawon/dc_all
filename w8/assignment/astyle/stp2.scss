@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  background: linear-gradient(to top, red, black);
+}
+
+.container {
+  $padding-inline-value: 64px;
+  max-width: 1200px + 2 * $padding-inline-value;
+  margin-inline: auto;
+  padding-inline: $padding-inline-value;
+}
+.wrapper {
+  padding-block: 10px;
+}
+
+.nav__menu > a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.nav {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-block: 12px;
+  }
+  &__menuWrapper {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+}
+
+.button {
+  width: fit-content;
+  background-color: rgb(203, 69, 62);
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-align: center;
+}
+
+#hero1 {
+  .wrapper {
+    padding-top: 100px;
+  }
+  color: rgb(255, 255, 255);
+  text-align: center;
+  .book {
+    font-size: 90px;
+    font-family: "Cinzel Decorative", cursive;
+  }
+  p {
+    font-size: 14px;
+    padding-block: 50px;
+    margin-bottom: 24px;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+}
+
+.main__media {
+  background-color: none;
+  aspect-ratio: 20 / 8;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
