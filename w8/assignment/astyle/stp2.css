@@ -24,8 +24,6 @@
 }
 
 .nav {
-  container-type: inline-size;
-  container-name: nav;
   font-family: "Cinzel Decorative", cursive;
   font-size: 16px;
   color: rgb(255, 255, 255);
@@ -37,18 +35,10 @@
   align-items: baseline;
   padding-block: 12px;
 }
-.nav .lit53px {
-  display: none;
-}
 .nav__menuWrapper {
   display: flex;
   gap: 24px;
   align-items: center;
-}
-@container nav (width < 48rem ) {
-  .nav .nav__menuWrapper {
-    display: none;
-  }
 }
 
 .button {
@@ -84,4 +74,11 @@
 .main__media {
   background-color: none;
   aspect-ratio: 20/8;
+  overflow: hidden;
+}
+.main__media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
