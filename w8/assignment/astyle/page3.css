@@ -19,7 +19,7 @@
 }
 
 .title {
-  color: rgb(255, 0, 0);
+  color: rgb(0, 255, 0);
   font-size: 80px;
   font-family: "Cinzel Decorative", cursive;
   max-width: 1328px;
@@ -57,7 +57,7 @@
 }
 #hero2 h2 {
   margin-bottom: 20px;
-  color: rgb(255, 0, 0);
+  color: rgb(0, 255, 0);
 }
 #hero2 p {
   line-height: 30px;
