@@ -40,42 +40,42 @@
      object-fit: cover;
 }
 
-#hero2 .wrapper {
+.section .wrapper {
   display: flex;
   align-items: center;
   gap: 24px;
 }
-#hero2 .wrapper > * {
+.section .wrapper > * {
   flex: 1;
 }
-#hero2 .main__buttonWrapper {
+.section .main__buttonWrapper {
   display: flex;
   gap: 16px;
 }
-#hero2 .main__media {
+.section .main__media {
   aspect-ratio: 4/3;
 }
-#hero2 h2 {
+.section h2 {
   margin-bottom: 20px;
   color: rgb(255, 0, 0);
 }
-#hero2 p {
-  line-height: 30px;
+.section p {
+  line-height: 28px;
   max-width: 60ch;
   margin-bottom: 24px;
   font-size: 14px;
   font-family: "Noto Sans KR", sans-serif;
 }
 @media (width < 53rem) {
-  #hero2 .container {
+  .section .container {
     padding-top: 70px;
   }
-  #hero2 .wrapper {
+  .section .wrapper {
     display: unset;
     text-align: center;
     padding-block: 30px;
   }
-  #hero2 p {
+  .section p {
     margin-inline: auto;
   }
 }

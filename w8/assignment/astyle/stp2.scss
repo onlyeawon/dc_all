@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-.box {
+body {
+  min-height: 100dvh;
   background: linear-gradient(to top, red, black);
 }
 
@@ -62,6 +63,8 @@
     font-family: "Cinzel Decorative", cursive;
   }
   p {
+    margin-inline: auto;
+    max-width: 80ch;
     line-height: 26px;
     font-size: 14px;
     padding-block: 50px;
