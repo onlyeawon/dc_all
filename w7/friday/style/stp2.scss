@@ -124,23 +124,19 @@
     margin-bottom: 24px;
   }
   @media (width < 53.125rem) {
+    .container {
+      padding-top: 20px;
+    }
     .wrapper {
       display: block;
       text-align: center;
-      p {
-        margin-inline: auto;
-      }
+      padding-block: 40px;
     }
-    .main {
-      &__text {
-        margin-bottom: 2.25rem;
-        &__buttonWrapper {
-          margin-inline: auto;
-          flex-direction: column;
-          align-items: center;
-          gap: 0;
-        }
-      }
+    .button {
+      margin-inline: auto;
+    }
+    p {
+      margin-inline: auto;
     }
   }
 }
