@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  aspect-ratio: 1/1;
+  width: 12.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  margin-bottom: 16px;
+  transition: background-color 250ms ease-in-out;
+}
+
+.box:hover {
+  background-color: cornflowerblue;
+}
+
+.box.boxSelected {
+  background-color: coral;
+}
