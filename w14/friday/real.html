@@ -25,6 +25,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style/real.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
     <audio id="player" src="img/number.mp3"></audio>
@@ -39,11 +40,11 @@
     <div class="section nav">
       <div class="containerNav">
         <div class="wrapper">
-          <div class="nav__logo"><a href="stp2.html">HOME</a></div>
+          <div class="nav__logo"><a href="real.html">HOME</a></div>
           <div class="nav__menuWrapper">
             <div class="nav__menu"><a href="page1.html">SPACE</a></div>
-            <div class="nav__menu"><a href="page1.html">DESTRUCTION</a></div>
-            <div class="nav__menu"><a href="page1.html">PEACE</a></div>
+            <div class="nav__menu"><a href="page2.html">DESTRUCTION</a></div>
+            <div class="nav__menu"><a href="page3.html">PEACE</a></div>
           </div>
           <div class="nav__menuWrapper">
             <div class="nav__button"><a href="alert.html"> Click!</a></div>
@@ -54,13 +55,18 @@
         </div>
       </div>
     </div>
+    <hr />
+    <lottie-player
+      src="js/data.json"
+      speed="1"
+      style="aspect-ratio: 16 / 9; width: 50%"
+      loop
+      autoplay
+    ></lottie-player>
     <div class="section">
       <div class="container">
         <div class="main">
-          <p>
-            <!-- <h5>In such a beautioful world</h5> -->
-            이토록 아름다운 세상에서
-          </p>
+          <p>이토록 아름다운 세상에서</p>
         </div>
       </div>
     </div>
