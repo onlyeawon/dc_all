@@ -125,7 +125,7 @@ section {
 
 /* 내거 시작 */
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin-inline: auto;
   padding-inline: 30px;
   color: rgb(255, 255, 255);
@@ -200,18 +200,6 @@ p {
   }
 }
 
-/* .main__media {
-  margin-left: 500px;
-  margin-top: 20px;
-  aspect-ratio: 8/8;
-} */
-.main__media img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
 #s2 .animTarget {
   opacity: 0;
   transition: transform 850ms ease-in-out, opacity 2800ms;
@@ -243,6 +231,26 @@ p {
   transform: translateY(0);
 }
 
-#s4 {
-  padding-top: 200px;
+#s4 .animTarget {
+  opacity: 0;
+  transition: transform 750ms ease-out, opacity 1500ms;
+}
+#s4 .animTarget:nth-child(1) {
+  transform: translateY(-100px);
+}
+
+#s4.triggered .animTarget {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#s3 .container {
+  padding-top: 45px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 3px 5px 15px #ffffff;
+}
+
+.lastpage {
+  color: darkseagreen;
 }

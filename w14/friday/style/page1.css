@@ -229,3 +229,32 @@ p {
   opacity: 1;
   transform: translateY(0);
 }
+
+#s4 .animTarget {
+  opacity: 0;
+  transition: transform 750ms ease-out, opacity 1500ms;
+}
+#s4 .animTarget:nth-child(1) {
+  transform: translateY(-100px);
+}
+
+#s4.triggered .animTarget {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.space {
+  text-align: center;
+}
+
+.space2 {
+  text-align: center;
+  color: darkseagreen;
+}
+
+#s4 .container {
+  padding-top: 45px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 3px 5px 15px #6b6b6b;
+}
