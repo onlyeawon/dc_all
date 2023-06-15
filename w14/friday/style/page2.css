@@ -31,6 +31,28 @@ section {
   flex-direction: column;
   justify-content: center;
 }
+@media (width < 47.9375rem) {
+  #s1 .container {
+    justify-content: center;
+    max-width: 200px;
+    padding-top: 190px;
+    padding-inline: 6.25rem;
+  }
+  #s1 .wrapper {
+    display: block;
+    text-align: center;
+    padding-block: 40px;
+  }
+  #s1 .title {
+    font-size: 30px;
+  }
+  #s2 .title2 {
+    font-size: 50px;
+  }
+  #s2 .title3 {
+    font-size: 50px;
+  }
+}
 
 .animTrigger {
   background-color: rgb(21, 21, 21);
@@ -124,7 +146,7 @@ p {
 .title2 {
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 90px;
+  font-size: 80px;
   font-family: "Noto Serif KR", serif;
   transition: filter 400ms ease-out;
 }
@@ -132,7 +154,7 @@ p {
 .title3 {
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 90px;
+  font-size: 80px;
   font-family: "Noto Serif KR", serif;
   padding-bottom: 80px;
   transition: filter 400ms ease-out;
@@ -178,12 +200,11 @@ p {
   }
 }
 
-.main__media {
+/* .main__media {
   margin-left: 500px;
   margin-top: 20px;
   aspect-ratio: 8/8;
-  overflow: hidden;
-}
+} */
 .main__media img {
   width: 100%;
   height: 100%;
@@ -220,4 +241,8 @@ p {
 #s3.triggered .animTarget {
   opacity: 1;
   transform: translateY(0);
+}
+
+#s4 {
+  padding-top: 200px;
 }

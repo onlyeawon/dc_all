@@ -28,7 +28,7 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
-    <audio id="player" src="img/number.mp3"></audio>
+    <!-- <audio id="player" src="img/number.mp3"></audio>
     <div class="music">
       <button onclick="document.getElementById('player').play()">Play</button>
       <button
@@ -36,7 +36,7 @@
       >
         stop
       </button>
-    </div>
+    </div> -->
     <div class="section nav">
       <div class="containerNav">
         <div class="wrapper">
@@ -55,23 +55,24 @@
         </div>
       </div>
     </div>
-    <hr />
-    <lottie-player
-      src="js/data.json"
-      speed="1"
-      style="aspect-ratio: 16 / 9; width: 50%"
-      loop
-      autoplay
-    ></lottie-player>
-    <div class="section">
+    <div id="lottie">
+      <div class="lottieWrapper">
+        <lottie-player
+          src="js/data1.json"
+          speed="1"
+          style="width: 800px; height: 600px"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+    </div>
+    <div id="section">
       <div class="container">
         <div class="main">
           <p>이토록 아름다운 세상에서</p>
         </div>
       </div>
     </div>
-    <div class="curtain">이토록 아름다운 세상에서</div>
+    <div class="curtain"></div>
   </body>
 </html>
-<!-- 지구멸망 143일 전, 과학의 발달, 환경오염과 더불어 우리가 살고 있는 지구는 더 이상 살 수 없는 곳이 되었다. </br>
-여기에서는 3개의 SF 소설을 다룬다. 한개를 선택해 그 행성으로 이동해라. -->
