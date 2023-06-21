@@ -24,7 +24,7 @@
   padding-bottom: 30px;
   padding-inline: 1.875rem;
 }
-@media (width < 42.5rem) {
+@media screen and (width < 42.5rem) {
   #section .main {
     font-size: 40px;
   }
@@ -110,7 +110,7 @@ body {
   align-items: baseline;
 }
 
-@container nav (width < 29.375rem ) {
+@container nav (width <  42.5rem) {
   .nav__menuWrapper {
     display: none;
   }
