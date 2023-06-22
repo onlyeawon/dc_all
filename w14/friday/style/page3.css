@@ -263,6 +263,21 @@ p {
   box-shadow: 3px 5px 15px #6b6b6b;
 }
 
+.main__media {
+  padding-inline: 3.125rem;
+  padding-top: 150px;
+  justify-content: center;
+  aspect-ratio: 10/8;
+  overflow: hidden;
+}
+
+.main__media img {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .space {
   overflow: hidden; /* 텍스트가 넘칠 경우 숨김 처리 */
   border-right: 0.1rem solid rgb(255, 255, 255); /* 타이핑 커서 효과를 만들기 위한 오렌지색 테두리 */
