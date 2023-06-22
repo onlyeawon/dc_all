@@ -24,9 +24,19 @@
   padding-bottom: 30px;
   padding-inline: 1.875rem;
 }
-@media (width < 48rem) {
+@media (width < 50rem) {
   #section .main {
     font-size: 40px;
+  }
+  .containerNav .nav__logo {
+    opacity: 0;
+  }
+  .containerNav .nav__button {
+    opacity: 0;
+  }
+  .containerNav .nav__menuWrapper {
+    font-size: 26px;
+    gap: 1.625rem;
   }
 }
 
@@ -81,19 +91,15 @@ body {
 
 .containerNav {
   font-family: "Megrim", cursive;
-  max-width: 100vw;
   margin-inline: auto;
   padding-inline: 70px;
   padding-top: 30px;
   padding-bottom: 20px;
-  /* box-shadow: 3px 5px 15px #000001; */
 }
 
 .nav {
   color: rgb(255, 255, 255);
   font-size: 32px;
-  container-type: inline-size;
-  container-name: nav;
 }
 
 .nav .wrapper {
@@ -108,15 +114,6 @@ body {
   display: flex;
   gap: 54px;
   align-items: baseline;
-}
-
-@container nav (width < 50rem ) {
-  .nav__menuWrapper {
-    display: none;
-  }
-  .nav .lit640 {
-    display: unset;
-  }
 }
 
 /* 커튼 시작 */

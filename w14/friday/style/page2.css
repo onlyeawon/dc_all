@@ -52,6 +52,13 @@ section {
   #s2 .title3 {
     font-size: 50px;
   }
+  #s3 .world {
+    font-size: 16px;
+  }
+  #s4 P {
+    font-size: 14px;
+    line-height: 27px;
+  }
 }
 
 .animTrigger {
