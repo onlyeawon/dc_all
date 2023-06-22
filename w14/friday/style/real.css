@@ -24,9 +24,15 @@
   padding-bottom: 30px;
   padding-inline: 1.875rem;
 }
-@media (max-width < 30rem) {
+@media (width < 48rem) {
   #section .main {
     font-size: 40px;
+  }
+  .containerNav .nav__menuWrapper {
+    display: none;
+  }
+  .nav .lit640 {
+    display: unset;
   }
 }
 
@@ -108,15 +114,6 @@ body {
   display: flex;
   gap: 54px;
   align-items: baseline;
-}
-
-@container nav (width <  42.5rem) {
-  .nav__menuWrapper {
-    display: none;
-  }
-  .nav .lit640 {
-    display: unset;
-  }
 }
 
 /* 커튼 시작 */
