@@ -196,14 +196,14 @@ p {
 
 .main__media {
   padding-inline: 3.125rem;
-  padding-top: 150px;
+  padding-top: 170px;
   justify-content: center;
   aspect-ratio: 8/8;
   overflow: hidden;
 }
 .main__media img {
   width: 100%;
-  height: 80%;
+  height: 75%;
   -o-object-fit: cover;
   object-fit: cover;
 }
