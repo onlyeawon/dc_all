@@ -205,7 +205,7 @@ p {
   padding-inline: 3.125rem;
   padding-top: 150px;
   justify-content: center;
-  aspect-ratio: 8/8;
+  aspect-ratio: 10/8;
   overflow: hidden;
 }
 .main__media img {
