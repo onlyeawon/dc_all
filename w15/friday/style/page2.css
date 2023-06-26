@@ -59,6 +59,12 @@ section {
     font-size: 14px;
     line-height: 27px;
   }
+  .containerNav .nav__menuWrapper {
+    display: none;
+  }
+  .containerNav .nav__menuWrapperlit640 {
+    display: unset;
+  }
 }
 
 .animTrigger {
@@ -110,8 +116,6 @@ section {
 .nav {
   color: rgb(255, 255, 255);
   font-size: 24px;
-  container-type: inline-size;
-  container-name: nav;
 }
 
 .nav .onewrapper {
@@ -120,22 +124,13 @@ section {
   align-items: baseline;
   /* filter: blur(4px); */
 }
-.nav .lit640 {
+.nav__menuWrapperlit640 {
   display: none;
 }
 .nav__menuWrapper {
   display: flex;
   gap: 54px;
   align-items: baseline;
-}
-
-@container nav (width < 50rem ) {
-  .nav__menuWrapper {
-    display: none;
-  }
-  .nav .lit640 {
-    display: unset;
-  }
 }
 
 /* 내거 시작 */
