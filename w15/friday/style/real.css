@@ -43,7 +43,7 @@ body {
   padding-bottom: 30px;
   padding-inline: 2.5rem;
 }
-@media (width < 50rem) {
+@media all and (max-width:479px) {
   #section .main {
     font-size: 33px;
     text-align: right;
