@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100dvh;
+}
+
+main {
+  width: 100%;
+  height: 100dvh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: center;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: min(60ch, 100% - 4rem);
+  min-height: max(50rem, 100dvh);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (width < 47.9375rem) {
+  #s1 .container {
+    justify-content: center;
+    max-width: 200px;
+    padding-top: 190px;
+    padding-inline: 6.25rem;
+  }
+  #s1 .wrapper {
+    display: block;
+    text-align: center;
+    padding-block: 40px;
+  }
+  #s1 .title {
+    font-size: 30px;
+  }
+  #s2 .title2 {
+    font-size: 50px;
+  }
+  #s2 .title3 {
+    font-size: 50px;
+  }
+  #s3 .world {
+    font-size: 16px;
+  }
+  #s4 P {
+    font-size: 14px;
+    line-height: 27px;
+  }
+}
+
+.animTrigger {
+  background-color: rgb(21, 21, 21);
+}
+
+/* 네브바 */
+.nav__menu > a {
+  color: rgb(153, 153, 153);
+  text-decoration: none;
+}
+
+.nav__menu > a:hover {
+  color: #05fbff;
+}
+
+.nav__button > a {
+  color: rgb(153, 153, 153);
+  text-decoration: none;
+}
+
+.nav__button > a:hover {
+  color: #05fbff;
+}
+
+.nav__logo > a {
+  color: rgb(153, 153, 153);
+  text-decoration: none;
+}
+
+.nav__logo > a:hover {
+  color: #05fbff;
+}
+
+#nav__menu > a {
+  color: rgb(153, 153, 153);
+  text-decoration: none;
+}
+
+.containerNav {
+  font-family: "Megrim", cursive;
+  max-width: 100vw;
+  margin-inline: auto;
+  padding-inline: 30px;
+  padding-block: 1.25rem;
+  background-color: rgb(0, 0, 0);
+}
+
+.nav {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  container-type: inline-size;
+  container-name: nav;
+}
+
+.nav .onewrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  /* filter: blur(4px); */
+}
+.nav .lit640 {
+  display: none;
+}
+.nav__menuWrapper {
+  display: flex;
+  gap: 54px;
+  align-items: baseline;
+}
+
+@container nav (width < 50rem ) {
+  .nav__menuWrapper {
+    display: none;
+  }
+  .nav .lit640 {
+    display: unset;
+  }
+}
+
+/* 내거 시작 */
+.container {
+  max-width: 1300px;
+  margin-inline: auto;
+  padding-inline: 30px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  padding-bottom: 60px;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Noto Serif KR", serif;
+  line-height: 34px;
+}
+
+.frist {
+  text-align: center;
+}
+
+.title2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  font-family: "Noto Serif KR", serif;
+  transition: filter 400ms ease-out;
+}
+
+.title3 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  font-family: "Noto Serif KR", serif;
+  padding-bottom: 80px;
+  transition: filter 400ms ease-out;
+}
+
+.title2:hover {
+  filter: blur(7px);
+}
+
+.title3:hover {
+  filter: blur(7px);
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  font-family: "Megrim", cursive;
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: 30px;
+}
+
+.title {
+  width: 22ch;
+  animation: typing 5s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.3px solid;
+  font-family: "Megrim", cursive;
+  font-size: 60px;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#s2 .animTarget {
+  opacity: 0;
+  transition: transform 850ms ease-in-out, opacity 2800ms;
+}
+
+#s2 .animTarget:nth-child(1) {
+  transform: translateY(-300px);
+}
+
+#s2 .animTarget:nth-child(2) {
+  transform: translateY(50px);
+}
+
+#s2.triggered .animTarget {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#s3 .animTarget {
+  opacity: 0;
+  transition: transform 750ms ease-out, opacity 1500ms;
+}
+#s3 .animTarget:nth-child(1) {
+  transform: translateY(-100px);
+}
+
+#s3.triggered .animTarget {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#s4 .animTarget {
+  opacity: 0;
+  transition: transform 750ms ease-out, opacity 1500ms;
+}
+#s4 .animTarget:nth-child(1) {
+  transform: translateY(-100px);
+}
+
+#s4.triggered .animTarget {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#s3 .container {
+  padding-top: 35px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 3px 5px 15px #ffffff;
+}
+
+.main__media {
+  padding-inline: 3.125rem;
+  padding-top: 150px;
+  justify-content: center;
+  aspect-ratio: 10/8;
+  overflow: hidden;
+}
+
+.main__media img {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.jitter {
+  text-align: center;
+  animation: jitter 0.5s infinite;
+}
+@keyframes jitter {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(2px, 0px);
+  }
+  75% {
+    transform: translate(-1px, 1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.jitter2 {
+  text-align: center;
+  animation: jitter 0.5s infinite;
+}
+@keyframes jitter {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(2px, 0px);
+  }
+  75% {
+    transform: translate(-1px, 1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
