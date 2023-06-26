@@ -11,8 +11,8 @@ body {
 
 .lottieWrapper {
   position: absolute;
-  top: calc(50vh - 100px);
-  left: calc(50% - 189px);
+  top: calc(50vh - 80px);
+  left: calc(50% - 145px);
 }
 
 .main2{
