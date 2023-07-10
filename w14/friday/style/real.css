@@ -55,10 +55,9 @@ body {
 /* pc title */
 .main {
   font-family: "Noto Serif KR", serif;
-  /* font-family: "Diphylleia", serif; */
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 110px;
+  font-size: 96px;
   transition: filter 900ms ease-out;
   filter: blur(7px);
   position: absolute;
